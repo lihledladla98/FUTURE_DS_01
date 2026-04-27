@@ -138,7 +138,7 @@ Some products generate high sales but low or negative profit, indicating pricing
 
 ## 🚀 How to Use This Dashboard
 
-1. Download `Task_1.pbix` from this repository  
+1. Download `Task 1.pbix` from this repository  
 2. Open with **Power BI Desktop**  
 3. Navigate between dashboard pages  
 4. Use filters to explore:
