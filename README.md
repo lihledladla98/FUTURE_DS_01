@@ -60,3 +60,18 @@ and profitability insights to help the business grow faster.
 ---
 
 ## 📁 Repository Structure
+superstore-sales-analytics/
+│
+├── data/
+│   └── Sample_Superstore.xlsx  # Raw dataset
+│
+├── dashboard/
+│   └── superstore_dashboard.xlsx # Final Power BI dashboard
+│
+├── screenshots/
+│   ├── executive_dashboard.png
+│   ├── revenue_trends.png
+│   ├── category_analysis.png
+│   └── regional_analysis.png
+│
+└── README.md
