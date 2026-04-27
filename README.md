@@ -68,10 +68,4 @@ superstore-sales-analytics/
 ├── dashboard/
 │   └── superstore_dashboard.xlsx # Final Power BI dashboard
 │
-├── screenshots/
-│   ├── executive_dashboard.png
-│   ├── revenue_trends.png
-│   ├── category_analysis.png
-│   └── regional_analysis.png
-│
 └── README.md
