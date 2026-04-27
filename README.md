@@ -10,7 +10,7 @@ This project analyzes the **Superstore Sales dataset** to understand business pe
 
 > **Dataset:** Superstore Sales Dataset  
 > **Tool:** Microsoft Power BI Desktop  
-> **Pages:** 2 Interactive Dashboard Pages  
+> **Pages:** 4 Interactive Dashboard Pages  
 
 ---
 
