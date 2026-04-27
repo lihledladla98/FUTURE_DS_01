@@ -1,71 +1,269 @@
-# 🏪 Superstore Business Sales Performance Analytics
+# 🛒 Marketing Funnel & Conversion Performance Analysis
 ## Data Science & Analytics — Task 1 (2026)
 ### By Future Interns | Thembelihle Dladla
 
 ---
 
 ## 📌 Project Overview
-This project analyzes 4 years of Superstore sales data (2014–2017)
-to uncover revenue trends, top products, regional performance,
-and profitability insights to help the business grow faster.
+
+This project analyzes **1M+ e-commerce events** from November 2019 to understand how users move through the marketing funnel — from page views to cart adds to purchases. The goal is to help the business identify drop-off points, optimize conversion rates, and grow revenue through data-driven decisions.
+
+> **Dataset:** E-Commerce User Behavior Dataset | November 2019  
+> **Tool:** Microsoft Power BI Desktop  
+> **Pages:** 3 Interactive Dashboard Pages
 
 ---
 
 ## 🎯 Business Questions Answered
-- Which products generate the most revenue?
-- How do sales change over time?
-- Which categories or regions are most profitable?
+
+- Where are users dropping off in the funnel?
+- Which brands and categories drive the most revenue?
+- What price ranges convert best?
+- Which hours of the day have the highest conversion rates?
 - Where should the business focus to grow faster?
 
 ---
 
-## 📊 Key Findings
+## 📊 Key Metrics at a Glance
+
 | Metric | Value |
 |--------|-------|
-| Total Revenue | $2.30M |
-| Total Profit | $286K |
-| Profit Margin | 12.5% |
-| Total Orders | 5,009 |
-| Unique Customers | 793 |
-| Revenue Growth | +51% (2014→2017) |
+| 👁 Total Page Views | 1,014,762 |
+| 🛒 Total Cart Adds | 15,445 |
+| 💳 Total Purchases | 18,368 |
+| 💰 Total Revenue | $5,653,876 |
+| 🧾 Avg Order Value | $307.81 |
+| 👥 Unique Buyers | 13,635 |
+| 📉 View → Cart Rate | 1.52% |
+| 🎯 Overall Conv Rate | 1.81% |
 
 ---
 
-## 🔍 Top Insights
-1. **Technology leads revenue** at $836K with 17.4% margin
-2. **Tables sub-category is loss-making** despite high sales
-3. **West region** outperforms all others at 14.9% margin
-4. **40%+ discounts destroy profit** — policy reform needed
-5. **Q4 seasonal spike** every November–December
+## 📁 Dashboard Structure
+
+### 📄 Page 1 — Executive Overview
+The main performance dashboard providing a high-level summary of all funnel metrics.
+
+**Visuals included:**
+- KPI Cards — Total Views, Cart Adds, Purchases, Revenue, AOV, Conv Rate
+- Total Views by Hour (Area Chart)
+- Total Purchases by Time of Day — Morning, Afternoon, Evening, Night
+- Total Revenue by Category (Bar Chart)
 
 ---
 
-## ⚡ Strategic Recommendations
-1. Fix loss-making product lines (Tables, Supplies)
-2. Cap all discounts at 30%
-3. Double down on Technology category
-4. Amplify West Region presence
-5. Launch B2B Corporate program
-6. Plan Q4 campaigns from August
+### 📄 Page 2 — Conversion & Revenue Deep Dive
+Detailed breakdown by brand, category, and price range to identify top performers and underperformers.
+
+**Visuals included:**
+- Price Range Table — Views, Purchases, Conv Rate %, Revenue, Funnel Status
+- Category Table — Top 14 categories with Conv Rate and Category Status
+- Top 10 Brands by Total Revenue (Clustered Bar Chart)
+- Conversion Rate % by Price Range (Bar Chart)
+- Conversion Rate % by Category (Bar Chart)
 
 ---
 
-## 🛠 Tools Used
+### 📄 Page 3 — Funnel Insights & Growth Recommendations
+Strategic insights page with actionable recommendations for the business.
+
+**Visuals included:**
+- Insight KPI Cards — Drop-Off Rate, Cart Abandonment, Revenue Lost, Peak Conv Rate
+- Priority Action Table — 7 ranked recommendations with Impact, Effort & Status
+- Impact vs Effort Matrix (Scatter Chart)
+- Key Insight Text Boxes — Biggest Finding, Quickest Win, Revenue Alert, Focus Area
+
+---
+
+## 🔍 Key Findings
+
+### 1. 🔴 Massive Top-Funnel Drop-Off
+**98.5% of visitors never add to cart.** This is the single biggest issue — fixing product discovery and engagement at the top of the funnel has the highest potential revenue impact.
+
+### 2. ⭐ Peak Conversion: 06:00–10:00 UTC
+Conversion rate is **80% higher in morning hours** (2.1–2.3%) compared to afternoon (1.2%). Ad budgets should shift to this window immediately.
+
+### 3. 📦 Electronics Dominates at 76.9%
+Electronics drives **$4.35M of the $5.65M** total revenue. Smartphones alone account for $3.9M. Both a massive opportunity and a concentration risk.
+
+### 4. 🍎 Apple vs Samsung
+Apple converts at **3.70%** vs Samsung's **3.58%** despite Samsung having 27% more views. Apple customers show stronger purchase intent.
+
+### 5. 💲 $101–$200 Price Range = Best Conversion
+The **$101–$200 price band** has the highest conversion rate at **2.12%**. The $51–$100 range underperforms at 1.42% and needs attention.
+
+### 6. 👗 Apparel is Broken
+**40,545 views but only 0.31% conversion** — the lowest of any category. The UX, pricing, or product range for apparel needs urgent review.
+
+---
+
+## ⚡ Top 7 Recommendations
+
+| Priority | Area | Action | Expected Impact |
+|----------|------|--------|----------------|
+| 🥇 1 | Top Funnel | Add exit-intent popups & product recommendations | 📈 2× Revenue |
+| 🥈 2 | Ad Timing | Shift 40% of budget to 06:00–10:00 UTC | 📈 40% better ROAS |
+| 🥉 3 | Electronics | Create Phone + Headphone bundles | 📈 +$93 per order |
+| 4️⃣ | Price Range | A/B test $51–$100 price anchoring | 📈 +0.5% conv rate |
+| 5️⃣ | Brand | Samsung cart retargeting campaign | 📈 +$200K revenue |
+| 6️⃣ | Apparel | Full UX audit of apparel pages | 📈 Fix broken category |
+| 7️⃣ | Checkout | Make Buy Now button more prominent | 📈 +15% purchases |
+
+---
+
+## 🛠 Tools & Technologies Used
+
 | Tool | Purpose |
 |------|---------|
-| Microsoft Excel | Data cleaning, analysis & dashboard |
-| Python | Advanced analysis & visualization |
-| Power BI | Interactive dashboard (optional) |
+| **Power BI Desktop** | Interactive dashboard & visualization |
+| **Power Query (M Language)** | Data cleaning & transformation |
+| **DAX** | Calculated columns, measures & KPIs |
+| **Microsoft Excel** | Initial data exploration |
+| **Python (Pandas)** | Advanced analysis & data validation |
 
 ---
 
-## 📁 Repository Structure
-superstore-sales-analytics/
+## 📐 DAX Measures Created
+
+| Category | Measures |
+|----------|---------|
+| Funnel KPIs | Total Views, Total Cart Adds, Total Purchases, Total Revenue, AOV |
+| Conversion Rates | View→Cart Rate, Cart→Purchase Rate, Overall Conv Rate, Cart Abandonment |
+| Brand Analysis | Brand Revenue, Brand Conv Rate, Brand Market Share, Top 10 Flag |
+| Category Analysis | Category Revenue, Category Rank, Category Status, Top 10 Flag |
+| Price Analysis | Price Range Conv Rate, Price Range Revenue Share, Price Range Status |
+| Time Analysis | Conv Rate by Hour, Peak Hour Flag, Time of Day grouping |
+| Status Labels | Funnel Status, Category Status, Revenue Status, Performance Status |
+
+---
+
+## 🔄 Power Query Transformations
+
+| Transformation | Description |
+|---------------|-------------|
+| Remove UTC text | Cleaned `event_time` column from text to datetime |
+| Fill nulls — category | Replaced blank `category_code` with `"unknown"` |
+| Fill nulls — brand | Replaced blank `brand` with `"other"` |
+| Add `category_main` | Extracted first level — Electronics, Appliances etc. |
+| Add `category_label` | Full readable path — Electronics › Smartphone |
+| Add `brand_clean` | Title-cased brand names |
+| Add `hour` | Extracted hour from datetime |
+| Add `time_of_day` | Morning / Afternoon / Evening / Night grouping |
+| Add `price_bucket` | $0-$50, $51-$100, $101-$200, $201-$500, $501-$1K, $1K+ |
+
+---
+
+## 📈 Funnel Drop-Off Summary
+
+```
+👁 Page Views        1,014,762   (100%)
+        ↓ 98.48% drop-off
+🛒 Cart Adds            15,445   (1.52%)
+        ↓ Strong close rate
+💳 Purchases            18,368   (1.81% of views)
+        ↓
+👤 Unique Buyers         13,635
+```
+
+> ⚠️ Note: Purchases exceed cart adds because the dataset includes direct "Buy Now" purchases that bypass the cart — a positive signal showing strong impulse purchase behavior.
+
+---
+
+## 🚀 How to Use This Dashboard
+
+1. Download `Task_1.pbix` from this repository
+2. Open with **Power BI Desktop** (free download at powerbi.microsoft.com)
+3. The data is embedded — no external connections needed
+4. Navigate between **3 pages** using the tabs at the bottom
+5. Use the **slicers** to filter by category, brand, price range, or time of day
+6. Hover over any visual for **detailed tooltips**
+
+### System Requirements
+- Power BI Desktop (latest version recommended)
+- Windows 10/11
+- Minimum 4GB RAM
+
+---
+
+## 📂 Repository Structure
+
+```
+marketing-funnel-analysis/
 │
-├── data/
-│   └── Sample_Superstore.xlsx  # Raw dataset
+├── 📊 Task_1.pbix                    # Power BI Dashboard (main file)
 │
-├── dashboard/
-│   └── superstore_dashboard.xlsx # Final Power BI dashboard
+├── 📁 data/
+│   └── 2019-Nov.xlsx                 # Raw e-commerce dataset
 │
-└── README.md
+├── 📁 screenshots/
+│   ├── page1_executive_overview.png  # Page 1 screenshot
+│   ├── page2_conversion_analysis.png # Page 2 screenshot
+│   └── page3_insights.png           # Page 3 screenshot
+│
+├── 📁 analysis/
+│   └── funnel_analysis.xlsx         # Excel analysis report
+│
+└── README.md                        # This file
+```
+
+---
+
+## 📸 Dashboard Screenshots
+
+### Page 1 — Executive Overview
+![Page 1](screenshots/page1_executive_overview.png)
+
+### Page 2 — Conversion & Revenue Analysis
+![Page 2](screenshots/page2_conversion_analysis.png)
+
+### Page 3 — Insights & Recommendations
+![Page 3](screenshots/page3_insights.png)
+
+---
+
+## 📚 Dataset Information
+
+| Field | Description |
+|-------|-------------|
+| `event_time` | Timestamp of the event |
+| `event_type` | view / cart / purchase |
+| `product_id` | Unique product identifier |
+| `category_id` | Category identifier |
+| `category_code` | Full category path (e.g. electronics.smartphone) |
+| `brand` | Product brand name |
+| `price` | Product price in USD |
+| `user_id` | Unique user identifier |
+| `user_session` | Session identifier |
+
+**Source:** E-Commerce Behavior Data | Kaggle  
+**Period:** November 2019  
+**Size:** 1,048,575 rows × 9 columns
+
+---
+
+## 👤 Author
+
+**Thembelihle Dladla**
+
+- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- 🌐 GitHub: [@yourusername](https://github.com/yourusername)
+- 📧 Email: your.email@gmail.com
+
+---
+
+## 🏢 Program
+
+**Future Interns — Data Science & Analytics Program 2026**  
+🔗 [https://www.linkedin.com/company/future-interns/](https://www.linkedin.com/company/future-interns/)
+
+---
+
+## 🏷 Tags
+
+`power-bi` `data-analytics` `marketing-funnel` `conversion-analysis`
+`ecommerce` `dax` `power-query` `business-intelligence`
+`future-interns` `data-science` `python` `excel`
+
+---
+
+*This project was completed as part of the Future Interns Data Science & Analytics internship program. All analysis is based on publicly available e-commerce behavior data.*
