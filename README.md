@@ -1,63 +1,203 @@
-# 🏪 Superstore Business Sales Performance Analytics
+# 🛍 Superstore Sales & Profit Analysis
 ## Data Science & Analytics — Task 1 (2026)
 ### By Future Interns | Thembelihle Dladla
 
 ---
 
 ## 📌 Project Overview
-This project analyzes 4 years of Superstore sales data (2014–2017)
-to uncover revenue trends, top products, regional performance,
-and profitability insights to help the business grow faster.
+
+This project analyzes the **Superstore Sales dataset** to understand business performance across regions, categories, and customer segments. The goal is to identify revenue drivers, profitability trends, and opportunities for strategic growth using data-driven insights.
+
+> **Dataset:** Superstore Sales Dataset  
+> **Tool:** Microsoft Power BI Desktop  
+> **Pages:** 2 Interactive Dashboard Pages  
 
 ---
 
 ## 🎯 Business Questions Answered
-- Which products generate the most revenue?
-- How do sales change over time?
-- Which categories or regions are most profitable?
-- Where should the business focus to grow faster?
+
+- Which regions generate the most sales and profit?
+- Which product categories and sub-categories perform best?
+- Where is the business losing profit?
+- Which customer segments are most valuable?
+- How do sales and profit trends change over time?
 
 ---
 
-## 📊 Key Findings
+## 📊 Key Metrics at a Glance
+
 | Metric | Value |
 |--------|-------|
-| Total Revenue | $2.30M |
-| Total Profit | $286K |
-| Profit Margin | 12.5% |
-| Total Orders | 5,009 |
-| Unique Customers | 793 |
-| Revenue Growth | +51% (2014→2017) |
+| 💰 Total Sales | $2.30M |
+| 📈 Total Profit | $286K |
+| 📦 Total Orders | 9,994 |
+| 👥 Customers | 793 |
+| 📊 Profit Margin | 12.4% |
+| 🌍 Regions | 4 |
 
 ---
 
-## 🔍 Top Insights
-1. **Technology leads revenue** at $836K with 17.4% margin
-2. **Tables sub-category is loss-making** despite high sales
-3. **West region** outperforms all others at 14.9% margin
-4. **40%+ discounts destroy profit** — policy reform needed
-5. **Q4 seasonal spike** every November–December
+## 📁 Dashboard Structure
+
+### 📄 Page 1 — Executive Overview
+High-level summary of business performance across key metrics.
+
+**Visuals included:**
+- KPI Cards — Total Sales, Profit, Orders, Profit Margin
+- Sales by Region (Bar Chart)
+- Profit by Region (Bar Chart)
+- Sales by Category (Donut Chart)
+- Monthly Sales Trend (Line Chart)
 
 ---
 
-## ⚡ Strategic Recommendations
-1. Fix loss-making product lines (Tables, Supplies)
-2. Cap all discounts at 30%
-3. Double down on Technology category
-4. Amplify West Region presence
-5. Launch B2B Corporate program
-6. Plan Q4 campaigns from August
+### 📄 Page 2 — Sales & Profit Deep Dive
+Detailed breakdown of performance by category, segment, and product level.
+
+**Visuals included:**
+- Sales & Profit by Sub-Category (Bar Chart)
+- Profit by Segment (Bar Chart)
+- Top 10 Products by Sales (Bar Chart)
+- Loss-Making Products (Table)
+- Sales vs Profit Scatter Plot (Performance Matrix)
 
 ---
 
-## 🛠 Tools Used
+## 🔍 Key Findings
+
+### 1. 🌍 West Region Leads Performance
+The West region generates the highest sales and profit, making it the most valuable region for the business.
+
+### 2. 📦 Technology Drives Revenue
+Technology is the top-performing category in both sales and profitability, contributing significantly to total revenue.
+
+### 3. ⚠️ Furniture Has Profit Issues
+Although Furniture generates strong sales, it has lower profit margins due to higher costs and discounts.
+
+### 4. 🪑 Tables Cause Losses
+The Tables sub-category is consistently unprofitable and negatively impacts overall profitability.
+
+### 5. 👥 Consumer Segment Dominates
+The Consumer segment contributes the largest share of sales compared to Corporate and Home Office segments.
+
+### 6. 📉 Profit Variability Across Products
+Some products generate high sales but low or negative profit, indicating pricing or cost inefficiencies.
+
+---
+
+## ⚡ Top Business Recommendations
+
+| Priority | Area | Action | Expected Impact |
+|----------|------|--------|----------------|
+| 🥇 1 | Profitability | Reduce discounts on loss-making products | 📈 Improve margins |
+| 🥈 2 | Product Strategy | Focus on Technology category growth | 📈 Increase revenue |
+| 🥉 3 | Cost Control | Optimize Furniture category costs | 📈 Reduce losses |
+| 4️⃣ | Product Mix | Remove or reprice unprofitable products | 📈 Better profitability |
+| 5️⃣ | Regional Strategy | Expand high-performing regions | 📈 Higher sales |
+| 6️⃣ | Customer Targeting | Focus on Consumer segment | 📈 Increased conversions |
+| 7️⃣ | Pricing Strategy | Adjust pricing for low-margin items | 📈 Improved profit |
+
+---
+
+## 🛠 Tools & Technologies Used
+
 | Tool | Purpose |
 |------|---------|
-| Microsoft Excel | Data cleaning, analysis & dashboard |
-| Python | Advanced analysis & visualization |
-| Power BI | Interactive dashboard (optional) |
+| **Power BI Desktop** | Interactive dashboard & visualization |
+| **Power Query (M Language)** | Data cleaning & transformation |
+| **DAX** | Calculations, KPIs & measures |
+| **Microsoft Excel** | Initial data exploration |
 
 ---
 
-## 📁 Repository Structure
+## 📐 DAX Measures Created
+
+| Category | Measures |
+|----------|---------|
+| Sales KPIs | Total Sales, Total Profit, Total Orders |
+| Profitability | Profit Margin, Avg Sales per Order |
+| Regional Analysis | Sales by Region, Profit by Region |
+| Product Analysis | Sales by Category, Sub-Category Performance |
+| Ranking | Top Products, Loss-Making Products |
+| Trends | Monthly Sales, Monthly Profit |
+
+---
+
+## 🔄 Power Query Transformations
+
+| Transformation | Description |
+|---------------|-------------|
+| Data cleaning | Removed nulls and inconsistencies |
+| Date formatting | Converted order date to datetime |
+| Derived columns | Extracted Month & Year |
+| Category grouping | Structured category hierarchy |
+| Profit calculations | Ensured correct numeric formats |
+
+
+---
+
+## 🚀 How to Use This Dashboard
+
+1. Download `Task_1.pbix` from this repository  
+2. Open with **Power BI Desktop**  
+3. Navigate between dashboard pages  
+4. Use filters to explore:
+   - Region  
+   - Category  
+   - Segment  
+5. Hover over visuals for detailed insights  
+
+### System Requirements
+- Power BI Desktop  
+- Windows 10/11  
+- Minimum 4GB RAM  
+
+---
+
+## 📂 Repository Structure
+superstore-sales-analytics/
+│
+├── data/
+│   └── Sample_Superstore.xlsx    # Raw dataset
+│
+├── dashboard/
+│   └── superstore_dashboard.xlsx # Final Excel dashboard
+│
+└── README.md
+
+---
+
+## 📚 Dataset Information
+
+| Field | Description |
+|-------|-------------|
+| Order Date | Date of order |
+| Region | Sales region |
+| Category | Product category |
+| Sub-Category | Product sub-group |
+| Sales | Revenue generated |
+| Profit | Profit earned |
+| Segment | Customer segment |
+
+---
+
+## 👤 Author
+
+**Thembelihle Dladla**
+
+- 💼 LinkedIn: https://www.linkedin.com/in/thembelihle-dladla-1272a7292/  
+- 🌐 GitHub: https://github.com/lihledladla98/FUTURE_DS_01/edit/main/README.md
+
+---
+
+## 🏢 Program
+
+**Future Interns — Data Science & Analytics Program 2026**
+
+---
+
+## 🏷 Tags
+
+`power-bi` `data-analytics` `sales-analysis` `business-intelligence`
+`dax` `dashboard` `data-visualization` `superstore`
 
